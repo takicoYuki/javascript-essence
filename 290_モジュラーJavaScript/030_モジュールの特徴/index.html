@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- moduleが対応していないブラウザでの処理も書ける -->
+  <script nomodule>alert('nomodule')</script>
+  <!-- type moduleをつけると非同期処理になり一度だけ実行される -->
+  <!-- deferをつけるとhtmlを全部読み込んだ後にjsが読み込まれる -->
+  <script src="./main.js" defer></script>
+  <script type="module" src="./moduleB.js"></script>
+  <h1>module</h1>
+</body>
+</html>
