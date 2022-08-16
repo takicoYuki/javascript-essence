@@ -3,7 +3,7 @@
  * 以下の即時関数をモジュール化してください。
  * ※calcオブジェクトはmain.js内で行い、実行してください。
  */
-const calc = (function() {
+export const calc = (function() {
 
     let val = 0;
 
@@ -30,4 +30,3 @@ const calc = (function() {
         },
     }
 })();
-
